@@ -1,1 +1,17 @@
-https://codeforces.com/contest/59/problem/A
+s=input()
+p=list(s)
+count=0
+f=0
+for i in range(len(s)):
+    if p[i].isupper():
+        count+=1
+    else:
+        f+=1
+
+if count>f:
+    print(s.upper())
+elif(f>count):
+    print(s.lower())
+else:
+    print(s.lower())
+        
